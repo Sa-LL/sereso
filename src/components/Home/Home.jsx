@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import { Typography } from '@material-ui/core';
 import { useStyles } from './Styles';
 import Tip from '../Tip/Tip';
-import Logo from '../../img/logo.png';
+import Logo from '../../img/logo2.png';
 import Papel from '../../img/papel.svg';
 import Reciclaje from '../../img/reciclaje.svg';
 import Consumismo from '../../img/consumismo.svg';
@@ -53,7 +53,7 @@ const residuos = [
 		bolsa: Green,
 	},
 	{
-		nombre: 'restos de productos de panadería',
+		nombre: 'restos de productos de panaderia',
 		tipo: 'Restos de comida',
 		descripcion: descriptions[0],
 		bolsa: Green,

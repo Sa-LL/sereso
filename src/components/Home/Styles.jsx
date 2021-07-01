@@ -29,7 +29,7 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	app_name: {
 		fontSize: 50,
-		marginTop: -15,
+		marginTop: 0,
 		marginBottom: 15,
 	},
 	app_description: {
