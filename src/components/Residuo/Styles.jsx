@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles((theme) => ({
 	root: {
 		maxWidth: 400,
 		minWidth: 400,
@@ -19,8 +19,9 @@ export const useStyles = makeStyles({
 		display: 'flex',
 		flexDirection: 'column',
 		justifyContent: 'center',
+		alignItems: 'center',
 	},
 	tipTitle: {
 		fontSize: 20,
 	},
-});
+}));

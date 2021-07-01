@@ -2,6 +2,7 @@ import Home from './components/Home/Home';
 import { createMuiTheme } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 import { green, brown } from '@material-ui/core/colors';
+
 const theme = createMuiTheme({
 	typography: {
 		fontFamily: [
