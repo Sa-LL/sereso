@@ -17,15 +17,16 @@ export default function Tip(props) {
 			>
 				<CardContent className={_styles.tipCard}>
 					<img
-						height='150px'
 						src={props.imgSrc}
 						alt='papel'
 						style={{ margin: '10px 0px' }}
+						className={_styles.img}
 					/>
 					<Typography
 						style={{ margin: '10px 0px' }}
 						component='h5'
 						variant='h5'
+						className={_styles.title}
 					>
 						{props.title}
 					</Typography>
@@ -34,6 +35,7 @@ export default function Tip(props) {
 						color='textSecondary'
 						component='p'
 						style={{ textAlign: 'left' }}
+						className={_styles.details}
 					>
 						{props.details}
 					</Typography>
