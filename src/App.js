@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './components/Home/Home';
+import { createMuiTheme } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/styles';
+import { green, brown } from '@material-ui/core/colors';
+const theme = createMuiTheme({
+	typography: {
+		fontFamily: [
+			'Nunito',
+			'Segoe UI',
+			'Roboto',
+			'Oxygen',
+			'Ubuntu',
+			'Cantarell',
+			'Fira Sans',
+			'Droid Sans',
+			'Helvetica Neue',
+		].join(','),
+	},
+	palette: {
+		primary: green,
+		secondary: brown,
+	},
+});
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<ThemeProvider theme={theme}>
+			<div>
+				<Home />
+			</div>
+		</ThemeProvider>
+	);
 }
 
 export default App;
